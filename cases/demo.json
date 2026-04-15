@@ -1,0 +1,44 @@
+[
+  {
+    "case_id": "TC001",
+    "case_name": "Get All Posts",
+    "method": "GET",
+    "url": "/posts",
+    "params": {},
+    "json_data": null,
+    "expected_status": 200,
+    "expected_json": null
+  },
+  {
+    "case_id": "TC002",
+    "case_name": "Get Single Post",
+    "method": "GET",
+    "url": "/posts/1",
+    "params": {},
+    "json_data": null,
+    "expected_status": 200,
+    "expected_json": {
+      "userId": 1,
+      "id": 1,
+      "title": "sunt aut facere repellat provident occaecati excepturi optio reprehenderit"
+    }
+  },
+  {
+    "case_id": "TC003",
+    "case_name": "Create New Post",
+    "method": "POST",
+    "url": "/posts",
+    "params": {},
+    "json_data": {
+      "title": "foo",
+      "body": "bar",
+      "userId": 1
+    },
+    "expected_status": 201,
+    "expected_json": {
+      "title": "foo",
+      "body": "bar",
+      "userId": 1
+    }
+  }
+]

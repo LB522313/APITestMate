@@ -1,0 +1,80 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>APITestMate Report</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; }
+        h1 { color: #333; }
+        .summary { background-color: #f9f9f9; padding: 15px; border-radius: 5px; margin-bottom: 20px; }
+        .summary p { margin: 5px 0; }
+        table { width: 100%; border-collapse: collapse; margin-top: 10px; }
+        th, td { border: 1px solid #ddd; padding: 8px; text-align: left; }
+        th { background-color: #f2f2f2; }
+        .pass { color: green; font-weight: bold; }
+        .fail { color: red; font-weight: bold; }
+        .error-msg { color: #d9534f; font-size: 0.9em; }
+    </style>
+</head>
+<body>
+    <h1>APITestMate Test Report</h1>
+    <div class="summary">
+        <p><strong>Total Cases:</strong> 3</p>
+        <p><strong>Passed:</strong> <span class="pass">3</span></p>
+        <p><strong>Failed:</strong> <span class="fail">0</span></p>
+        <p><strong>Pass Rate:</strong> 100.00%</p>
+    </div>
+    <table>
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Method</th>
+                <th>URL</th>
+                <th>Status Code</th>
+                <th>Duration (s)</th>
+                <th>Result</th>
+                <th>Error Message</th>
+            </tr>
+        </thead>
+        <tbody>
+            
+            <tr>
+                <td>TC001</td>
+                <td>Get All Posts</td>
+                <td>GET</td>
+                <td>/posts</td>
+                <td>200</td>
+                <td>0.846</td>
+                <td class="pass">PASS</td>
+                <td class="error-msg"></td>
+            </tr>
+            
+            <tr>
+                <td>TC002</td>
+                <td>Get Single Post</td>
+                <td>GET</td>
+                <td>/posts/1</td>
+                <td>200</td>
+                <td>0.232</td>
+                <td class="pass">PASS</td>
+                <td class="error-msg"></td>
+            </tr>
+            
+            <tr>
+                <td>TC003</td>
+                <td>Create New Post</td>
+                <td>POST</td>
+                <td>/posts</td>
+                <td>201</td>
+                <td>0.484</td>
+                <td class="pass">PASS</td>
+                <td class="error-msg"></td>
+            </tr>
+            
+        </tbody>
+    </table>
+</body>
+</html>
+        
