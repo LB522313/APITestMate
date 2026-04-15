@@ -1,0 +1,21 @@
+# 虚拟环境
+venv/
+env/
+
+# Python 缓存
+__pycache__/
+*.pyc
+
+# IDE 配置（PyCharm）
+.idea/
+*.iml
+
+# 测试报告
+reports/*.html
+reports/
+
+# Docker 相关（如果需要忽略）
+*.tar
+
+# 其他
+.DS_Store
